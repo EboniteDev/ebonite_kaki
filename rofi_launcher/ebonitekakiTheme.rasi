@@ -1,0 +1,169 @@
+/**
+ * rofi -dump-theme output.
+ * Rofi version: 2.0.0
+ **/
+* {
+    base02:           rgba ( 49, 69, 73, 100 % );
+    base0C:           rgba ( 137, 221, 255, 100 % );
+    base05:           rgba ( 238, 255, 255, 100 % );
+    base0F:           rgba ( 255, 83, 112, 100 % );
+    base08:           rgba ( 240, 113, 120, 100 % );
+    spacing:          5;
+
+    background-color: #000000;
+	border-color: #4d1f24;
+
+	background-color-alt: #4d1f24;
+	foreground-color-alt: #95da4c;
+
+    base00:           rgba ( 38, 50, 56, 100 % );
+    base0A:           rgba ( 255, 203, 107, 100 % );
+    base03:           rgba ( 84, 110, 122, 100 % );
+
+	button-selection-bg: #626200;
+    button-selection-fg:  #ffff00;
+
+	element-selection-bg: #4d1f24;
+	element-selection-fg: #95da4c;
+
+	element-fg: #b2b2b2;
+	element-fg-alt: white;
+
+    base06:           rgba ( 238, 255, 255, 100 % );
+    base09:           rgba ( 247, 140, 108, 100 % );
+    base01:           rgba ( 46, 60, 67, 100 % );
+    base0B:           rgba ( 195, 232, 141, 100 % );
+    base04:           rgba ( 178, 204, 214, 100 % );
+    base0E:           rgba ( 199, 146, 234, 100 % );
+    foreground-light:           White;
+}
+window {
+    transparency:     "real";
+    background-color: rgba ( 38, 50, 56, 80 % );
+}
+mainbox {
+    padding:      30px 0px ;
+    border-color: var(border-color);
+    spacing:      30px ;
+    children:     [ "inputbar","message","mode-switcher","listview" ];
+    border:       3px ;
+	border-radius:0px ;
+}
+inputbar {
+    padding:  0px 15px ;
+    children: [ "prompt","textbox-prompt-colon","entry","case-indicator" ];
+}
+prompt {
+    text-color: var(foreground-color-alt);
+}
+textbox-prompt-colon {
+    margin:     0px 1.0000ch 0px 0px ;
+    expand:     false;
+    str:        ">>>";
+    text-color: var(button-selection-bg);
+}
+entry {
+    text-color: var(foreground-color-alt);
+}
+case-indicator {
+    text-color: var(base0F);
+}
+mode-switcher {
+    border-color: var(button-selection-bg);
+	//vertical horizontal
+    border:       3px 0px ;
+}
+message {
+    border-color: var(button-selection-bg);
+    border:       1px 0px ;
+}
+button {
+    padding:          5px ;
+	margin: 		  0px ;
+    background-color: var(background-color-alt);
+    text-color:       var(foreground-color-alt);
+}
+button selected {
+    background-color: var(button-selection-bg);
+	color: var(button-selection-fg);
+}
+textbox {
+    padding:          5px ;
+    background-color: var(base03);
+    text-color:       var(foreground-light);
+}
+listview {
+	//top left bottom right
+    margin:    0px 30px 0px 30px ;
+    scrollbar: true;
+}
+scrollbar {
+    background-color: var(background-color);
+    margin:           0px 0px 0px 20px ;
+    handle-width:     10px ;
+    border-color:     var(background-color-alt);
+    handle-color:     var(button-selection-bg);
+    border:           1px 1px ;
+}
+
+//ELEMENTS SECTION #####
+element {
+    padding:   5px ;
+    highlight: bold underline ;
+    spacing:   5px ;
+    children:  [ "element-icon","element-text" ];
+}
+
+//NORMAL ELEMENTS
+element normal {
+	background-color: var(background-color-alt);
+}
+element normal.normal {
+    text-color: var(element-fg);
+}
+element normal.urgent {
+    text-color: var(base0F);
+}
+element normal.active {
+    text-color: var(base0B);
+}
+
+//SELECTED ELEMENTS
+element selected {
+    background-color: var(button-selection-bg);
+}
+element selected.normal {
+    text-color: var(button-selection-fg);
+}
+element selected.urgent {
+    text-color: var(base0F);
+}
+element selected.active {
+    text-color: var(base0B);
+}
+
+//ALTERNATE ELEMENTS
+element alternate {
+	background-color: var(background-color-alt);
+}
+element alternate.normal {
+    text-color: var(element-fg);
+}
+element alternate.urgent {
+    text-color: var(base0F);
+}
+element alternate.active {
+    text-color: var(base0B);
+}
+
+//ELEMENT CONTENTS
+element-text {
+    background-color: inherit;
+    foreground-color: inherit;
+    text-color:       inherit;
+}
+element-icon {
+    background-color: transparent;
+    foreground-color: inherit;
+    text-color:       inherit;
+}
