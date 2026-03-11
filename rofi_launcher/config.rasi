@@ -1,0 +1,5 @@
+configuration {
+}
+//@import "ebonitekakiConfig.rasi"
+@theme "ebonitekakiTheme.rasi"
+
