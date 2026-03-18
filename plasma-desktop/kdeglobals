@@ -78,7 +78,7 @@ ForegroundVisited=127,140,141
 
 [Colors:View]
 BackgroundAlternate=86,27,30
-BackgroundNormal=0,0,0
+BackgroundNormal=18,18,18
 DecorationFocus=255,97,90
 DecorationHover=255,97,90
 ForegroundActive=109,34,33
@@ -92,7 +92,7 @@ ForegroundVisited=141,141,141
 
 [Colors:Window]
 BackgroundAlternate=73,23,25
-BackgroundNormal=0,0,0
+BackgroundNormal=36,36,36
 DecorationFocus=255,162,0
 DecorationHover=255,162,0
 ForegroundActive=83,62,37
@@ -105,47 +105,40 @@ ForegroundPositive=255,97,90
 ForegroundVisited=110,65,40
 
 [General]
-ColorSchemeHash=dc36eb454ffe3584b3a0e6c3ba7373b1c6e0e694
-LastUsedCustomAccentColor=232,203,45
-XftAntialias=true
-XftHintStyle=hintslight
-XftSubPixel=rgb
-fixed=Nimbus Mono PS [UKWN],10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-font=Noto Sans SemiCondensed Light,11,-1,5,300,0,0,0,0,0,0,0,0,0,0,1,Regular
-menuFont=Noto Sans ExtraCondensed Medium,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
-smallestReadableFont=Noto Sans SemiCondensed,8,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-toolBarFont=Noto Sans SemiCondensed,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+ColorSchemeHash=5cd2c541b374bf6bcbdc228f86d0021752098a29
+
+[Icons]
+Theme=breeze
 
 [KDE]
-AnimationDurationFactor=0.5
+AnimationDurationFactor=0.25
 LookAndFeelPackage=org.kde.breezedark.desktop
+ScrollbarLeftClickNavigatesByPage=true
 SingleClick=true
+contrast=4
+frameContrast=0.2
 widgetStyle=Fusion
 
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=false
+Breadcrumb Navigation=true
 Decoration position=2
 Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=true
+Show hidden files=false
 Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
-Sort reversed=true
-Speedbar Width=144
-View Style=Detail
-
-[Sounds]
-Enable=false
+Sort reversed=false
+Speedbar Width=138
+View Style=DetailTree
 
 [WM]
 activeBackground=77,31,36
 activeBlend=40,40,40
-activeFont=Noto Sans ExtraCondensed Medium,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
 activeForeground=149,218,76
 inactiveBackground=42,31,44
 inactiveBlend=40,40,57
