@@ -303,10 +303,10 @@
         }
     },
     "editor-colors": {
-        "BackgroundColor": "#000000",
+        "BackgroundColor": "#242424",
         "BracketMatching": "#00aa00",
         "CodeFolding": "#224e65",
-        "CurrentLine": "#2f2f2f",
+        "CurrentLine": "#484848",
         "CurrentLineNumber": "#ffff00",
         "IconBorder": "#000000",
         "IndentationLine": "#3a3f44",
