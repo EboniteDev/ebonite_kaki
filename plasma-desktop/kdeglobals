@@ -22,7 +22,7 @@ IntensityEffect=0
 
 [Colors:Button]
 BackgroundAlternate=77,77,77
-BackgroundNormal=0,0,0
+BackgroundNormal=36,36,36
 DecorationFocus=109,34,33
 DecorationHover=109,34,33
 ForegroundActive=180,113,31
@@ -50,7 +50,7 @@ ForegroundVisited=110,65,40
 
 [Colors:Selection]
 BackgroundAlternate=180,113,31
-BackgroundNormal=98,98,0
+BackgroundNormal=113,113,0
 DecorationFocus=180,113,31
 DecorationHover=180,113,31
 ForegroundActive=132,67,101
@@ -77,21 +77,21 @@ ForegroundPositive=255,97,90
 ForegroundVisited=127,140,141
 
 [Colors:View]
-BackgroundAlternate=86,27,30
+BackgroundAlternate=72,72,72
 BackgroundNormal=18,18,18
-DecorationFocus=255,97,90
-DecorationHover=255,97,90
-ForegroundActive=109,34,33
+DecorationFocus=113,113,0
+DecorationHover=113,113,0
+ForegroundActive=98,98,98
 ForegroundInactive=199,199,199
 ForegroundLink=255,162,0
-ForegroundNegative=218,68,83
+ForegroundNegative=255,0,0
 ForegroundNeutral=246,116,0
 ForegroundNormal=255,255,255
-ForegroundPositive=255,97,90
+ForegroundPositive=0,255,0
 ForegroundVisited=141,141,141
 
 [Colors:Window]
-BackgroundAlternate=73,23,25
+BackgroundAlternate=98,98,98
 BackgroundNormal=36,36,36
 DecorationFocus=255,162,0
 DecorationHover=255,162,0
@@ -105,7 +105,7 @@ ForegroundPositive=255,97,90
 ForegroundVisited=110,65,40
 
 [General]
-ColorSchemeHash=5cd2c541b374bf6bcbdc228f86d0021752098a29
+ColorSchemeHash=b6cf9259fdd7fc1bd91159607a609c3c62bdc5f2
 
 [Icons]
 Theme=breeze
@@ -117,7 +117,7 @@ ScrollbarLeftClickNavigatesByPage=true
 SingleClick=true
 contrast=4
 frameContrast=0.2
-widgetStyle=Fusion
+widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false
