@@ -1,1 +1,1 @@
-![Overview](https://raw.githubusercontent.com/EboniteDev/Images/refs/heads/main/ebonite_kaki_overview.png?token=GHSAT0AAAAAADZ6TVD7JXWZGAQPHUYEA6SG2OWWVNQ)
+![Overview](https://github.com/EboniteDev/Images/blob/477c2b16dc1f96bd2f31acdfaabf3f12bf0af759/ebonite_kaki_overview.png)
