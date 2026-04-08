@@ -62,7 +62,7 @@ ForegroundVisited=144,112,140
 
 [Colors:Tooltip]
 BackgroundAlternate=31,31,31
-BackgroundNormal=50,50,50
+BackgroundNormal=77,31,36
 DecorationFocus=180,113,31
 DecorationHover=180,113,31
 ForegroundActive=180,113,31
@@ -70,7 +70,7 @@ ForegroundInactive=189,195,199
 ForegroundLink=180,113,31
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=255,255,255
+ForegroundNormal=149,218,76
 ForegroundPositive=255,97,90
 ForegroundVisited=127,140,141
 
@@ -112,9 +112,9 @@ shadeSortColumn=true
 contrast=4
 
 [WM]
-activeBackground=77,31,36
+activeBackground=0,0,0
 activeBlend=40,40,40
 activeForeground=149,218,76
-inactiveBackground=42,31,44
+inactiveBackground=77,31,36
 inactiveBlend=40,40,57
 inactiveForeground=121,232,223
