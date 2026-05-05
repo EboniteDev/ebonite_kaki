@@ -12,29 +12,32 @@
 
 /* ########## CORE COLORS ########## */
 :root {
-	/* Primary Colors - SELF-EXPLAINING NAMES */
-	--primary-accent: #4d1f24;        /* Main theme color */
-	--primary-dark: #1f002f;           /* Dark variant of primary */
-	--secondary-accent: #ffff00;       /* Secondary theme color */
-	--hover-bg-accent: #4d1f24;
-	--hover-fg-accent: #95da4c;
-	--accent: #844569;          /*  accent (scrollbars) */
-	--urlbar: #000000;
+    /* Primary Colors - SELF-EXPLAINING NAMES */
+    --primary-accent: #4d1f24;        /* Main theme color */
+    --primary-dark: #1f002f;           /* Dark variant of primary */
+    --secondary-accent: #ffff00;       /* Secondary theme color */
+    --hover-bg-accent: #4d1f24;
+    --hover-fg-accent: #95da4c;
+    --accent: #844569;          /*  accent (scrollbars) */
+    --black: #000000;
 
-	/* Text Colors */
-	--text-primary: #ffffff;           /* Main text color */
-	--text-secondary: #b2b2b2;         /* Secondary text color */
+    /* Text Colors */
+    --text-primary: #ffffff;           /* Main text color */
+    --text-secondary: #b2b2b2;         /* Secondary text color */
 
-	/* Background Colors */
-	--bg-main: #000000;                /* Main background */
-	--bg-darker: #000000;              /* Darker background */
+    /* Background Colors */
+    --bg-main: #000000;                /* Main background */
+    --bg-darker: #000000;              /* Darker background */
+	--bg-light: #121212;
+	--bg-medium: #242424;
+	--bg-lighter: #363636;
 
-	/* UI Sizing - edges */
-	--radius: 0px;
-	--border-thin: 1px;
+    /* UI Sizing - edges */
+    --radius: 0px;
+    --border-thin: 1px;
 
-	/* Transitions */
-	--transition: all 0.2s ease;
+    /* Transitions */
+    --transition: all 0.2s ease;
 }
 
 /* ########## MAIN WINDOW BACKGROUND ########## */
@@ -61,54 +64,56 @@ z-index: -10;
 #navigator-toolbox::after,
 #TabsToolbar,
 #navigator-toolbox {
-background: var(--bg-main) !important;
+background: var(--bg-medium) !important;
 color: var(--secondary-accent) !important;
 border-radius: var(--radius) !important;
 }
 
 #navigator-toolbox {
-border-bottom: var(--border-thin) solid var(--hover-fg-accent) !important;
+/*BORDER SEPARATING THE NAVIGATION BARS TO THE CONTENT
+    border-bottom: var(--border-thin) solid var(--hover-fg-accent) !important;
+*/
 }
 
 /* ########## TABS ########## */
 .tab-background {
-	background-color: var(--bg-darker) !important;
-	border-radius: var(--radius) !important;
-	margin: 0 !important;
+    background-color: var(--bg-darker) !important;
+    border-radius: var(--radius) !important;
+    margin: 0 !important;
 }
 
 .tabbrowser-tab {
-	margin: 0 !important;
-	border-radius: var(--radius) !important;
+    margin: 0 !important;
+    border-radius: var(--radius) !important;
 }
 
 .tab-background[selected="true"] {
-	background: var(--primary-accent) !important;
-	border-radius: var(--radius) !important;
+    background: var(--primary-accent) !important;
+    border-radius: var(--radius) !important;
 }
 
 .tabbrowser-tab[selected="true"] .tab-content {
-	color: white !important;
+    color: white !important;
 }
 
 .tabbrowser-tab:not([selected="true"]) .tab-content {
-	color: gray !important;
+    color: gray !important;
 }
 
 .tabbrowser-tab:hover .tab-background {
-	background: var(--hover-bg-accent) !important;
+    background: var(--hover-bg-accent) !important;
 
 }
 
 .tabbrowser-tab:hover .tab-content {
-	color: var(--hover-fg-accent) !important;
+    color: var(--hover-fg-accent) !important;
 }
 
 /* ########## URLBAR ########## */
 #urlbar,
 #urlbar-input-container,
 #urlbar-background {
-background: var(--urlbar) !important;
+background: var(--lighter-accent) !important;
 color: var(--hover-fg-accent) !important;
 border: var(--border-thin) solid var(--primary-accent) !important;
 border-radius: var(--radius) !important;
@@ -143,18 +148,18 @@ color: var(--secondary-accent) !important;
 #BMB_bookmarksPopup > menuseparator,
 #bookmarksMenuPopup,
 .menupopup-arrowscrollbox {
-	background: var(--bg-darker) !important;
-	border: var(--border-thin) solid var(--primary-accent) !important;
-	border-radius: var(--radius) !important;
+    background: var(--bg-darker) !important;
+    border: var(--border-thin) solid var(--primary-accent) !important;
+    border-radius: var(--radius) !important;
 }
 
 #widget-overflow,
 #widget-overflow-mainView,
 panelmultiview {
-	background: var(--bg-main) !important;
-	border: var(--border-thin) solid rgba(105, 232, 223, 0.2) !important;
-	color: var(--text-primary) !important;
-	border-radius: var(--radius) !important;
+    background: var(--bg-main) !important;
+    border: var(--border-thin) solid rgba(105, 232, 223, 0.2) !important;
+    color: var(--text-primary) !important;
+    border-radius: var(--radius) !important;
 }
 
 #appMenu-popup .menu-text,
@@ -167,44 +172,44 @@ color: var(--text-primary) !important;
 menu,
 menuitem,
 toolbarbutton {
-	color: var(--text-primary) !important;
-	background: transparent !important;
-	border-radius: var(--radius) !important;
-	margin: 1px 4px !important;
-	transition: var(--transition) !important;
+    color: var(--text-primary) !important;
+    background: transparent !important;
+    border-radius: var(--radius) !important;
+    margin: 1px 4px !important;
+    transition: var(--transition) !important;
 }
 
 menu:hover,
 menuitem:hover,
 toolbarbutton:hover {
-	background: rgba(105, 232, 223, 0.1) !important; /* hover-bg-light */
-	color: var(--secondary-accent) !important;
+    background: rgba(105, 232, 223, 0.1) !important; /* hover-bg-light */
+    color: var(--secondary-accent) !important;
 }
 
 /* ########## TOOLBAR BUTTONS ########## */
 .toolbarbutton-1 {
-	background: transparent !important;
-	transition: var(--transition) !important;
-	color: var(--secondary-accent) !important;
+    background: transparent !important;
+    transition: var(--transition) !important;
+    color: var(--secondary-accent) !important;
 }
 
 .toolbarbutton-1:hover {
-	color: var(--secondary-accent) !important;
+    color: var(--secondary-accent) !important;
 }
 
 .toolbarbutton-1:hover:active {
-	background: var(--hover-bg-accent) !important;
+    background: var(--hover-bg-accent) !important;
 }
 
 /* ########## SCROLLBARS - SQUARE ########## */
 scrollbar thumb {
-	background: linear-gradient(45deg, var(--primary-accent), var(--accent)) !important;
-	border-radius: var(--radius) !important;
-	border: var(--border-thin) solid rgba(255, 255, 255, 0.2) !important;
+    background: linear-gradient(45deg, var(--primary-accent), var(--accent)) !important;
+    border-radius: var(--radius) !important;
+    border: var(--border-thin) solid rgba(255, 255, 255, 0.2) !important;
 }
 
 scrollbar thumb:hover {
-	background: linear-gradient(45deg, var(--secondary-accent), var(--primary-accent)) !important;
+    background: linear-gradient(45deg, var(--secondary-accent), var(--primary-accent)) !important;
 }
 
 /* ########## SIDEBAR ########## */
@@ -217,17 +222,17 @@ border-right: var(--border-thin) solid rgba(105, 232, 223, 0.2) !important;
 .findbar-container,
 .findbar-textbox,
 .findbar-button {
-	background: var(--bg-darker) !important;
-	color: var(--secondary-accent) !important;
-	border: var(--border-thin) solid rgba(105, 232, 223, 0.3) !important;
-	border-radius: var(--radius) !important;
-	margin: 2px !important;
+    background: var(--bg-darker) !important;
+    color: var(--secondary-accent) !important;
+    border: var(--border-thin) solid rgba(105, 232, 223, 0.3) !important;
+    border-radius: var(--radius) !important;
+    margin: 2px !important;
 }
 
 .findbar-textbox:hover,
 .findbar-button:hover {
-	border-color: var(--secondary-accent) !important;
-	background: rgba(105, 232, 223, 0.1) !important; /* hover-bg-light */
+    border-color: var(--secondary-accent) !important;
+    background: rgba(105, 232, 223, 0.1) !important; /* hover-bg-light */
 }
 
 /* ########## BOOKMARKS TOOLBAR ########## */
@@ -248,8 +253,8 @@ background: rgba(105, 232, 223, 0.1) !important; /* hover-bg-light */
 /* ########## SETTINGS & STATUS ########## */
 #preferences-window,
 window[pane] {
-	background: var(--bg-main) !important;
-	color: var(--text-primary) !important;
+    background: var(--bg-main) !important;
+    color: var(--text-primary) !important;
 }
 
 #statuspanel {

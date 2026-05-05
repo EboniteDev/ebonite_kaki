@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  Copyright 2026 EboniteDev
+
+  GtkSourceView is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  GtkSourceView is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public License
+  along with this library; if not, see <http://www.gnu.org/licenses/>.
+
+-->
+<style-scheme id="ebonite-kaki" _name="Ebonite Kaki" version="1.0">
+  <author>EboniteDev</author>
+  <_description></_description>
+
+  <metadata>
+    <property name="variant">dark</property>
+  </metadata>
+
+  <!-- Named Colors -->
+
+  <!-- Global Styles -->
+  <style name="bracket-match"       background="#55007F" foreground="#DC8ADD" bold="true" italic="true" scale="1"/>
+  <style name="bracket-mismatch"    underline="double-line" underline-color="#FF0000"/>
+  <style name="current-line"        background="#242424"/>
+  <style name="current-line-number" background="#484848" foreground="#00FF00" bold="true"/>
+  <style name="line-numbers"        background="#000000" foreground="#F9F06B"/>
+  <style name="map-overlay"         background="#F9F06B"/>
+  <style name="search-match"        background="#4D1F24" foreground="#81CA2D"/>
+  <style name="selection"           background="#626200" foreground="#F9F06B"/>
+  <style name="selection-unfocused" background="#26A269"/>
+  <style name="text"                background="#121212" foreground="#FFFFFF"/>
+
+  <!-- Defaults -->
+  <style name="def:base-n-integer"  foreground="#F67400"/>
+  <style name="def:boolean"         foreground="#FFFF00" bold="true" italic="false"/>
+  <style name="def:character"       foreground="#3DAEE9"/>
+  <style name="def:comment"         background="#rgba(0,0,0,0)" foreground="#7A7C7D"/>
+  <style name="def:constant"        background="#0A5000" foreground="#00FF00"/>
+  <style name="def:decimal"         foreground="#F67400"/>
+  <style name="def:error"           foreground="#DA4453" underline="single"/>
+  <style name="def:floating-point"  foreground="#F67400"/>
+  <style name="def:function"        background="#55007F" foreground="#EFAEFF"/>
+  <style name="def:keyword"         foreground="#FF557F" bold="true" italic="false" scale="1"/>
+
+</style-scheme>
